@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X
+    -UA-Compatible"
+      content="IE=edge"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="text/tailwindcss" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style></style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark:bg-slate-900 bg-slate-100">
+    <!-- scrollbar circle start -->
+    <div class="bar-top"></div>
+    <div class="bar-bottom"></div>
+    <div class="bar-left"></div>
+    <div class="bar-right"></div>
+    <!-- scrollbar circle finish -->
+
+    <!-- header start -->
+    <header class="dark:bg-slate-900 fixed top-0 left-0 w-full flex items-center z-10 dark:border-b-[1px] dark:rounded-b-[20%] rounded-[10rem] border-b-[3px] border-slate-300 bg-slate-100">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4 md:px-4 xl:px-[75px]">
+            <a href="#home" class="font-bold text-teal-500 block py-6 text-xl"> <i class="fas fa-user mr-2"></i>Nuzaaa</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="transisi hamburger-line origin-1 dark:bg-slate-400"></span>
+              <span class="transisi hamburger-line dark:bg-slate-400"></span>
+              <span class="transisi hamburger-line origin-2 dark:bg-slate-400"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:lg:bg-slate-900 dark:bg-slate-800 bg-slate-200"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base text-slate-500 py-2 mx-8 flex group-hover:text-teal-500 font-medium dark:text-slate-400"> <i class="fas fa-home mr-2 mt-1"></i> Beranda </a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base text-slate-500 py-2 mx-8 flex group-hover:text-teal-500 font-medium dark:text-slate-400"> <i class="fas fa-info-circle mr-2 mt-1"></i> Tentang saya </a>
+                </li>
+                <li class="group">
+                  <a href="#portfolio" class="text-base text-slate-500 py-2 mx-8 flex group-hover:text-teal-500 font-medium dark:text-slate-400"> <i class="fas fa-folder-open mr-2 mt-1"></i> Projek </a>
+                </li>
+                <li class="group">
+                  <a href="#blog" class="text-base text-slate-500 py-2 mx-8 flex group-hover:text-teal-500 font-medium dark:text-slate-400"> <i class="fas fa-blog mr-2 mt-1"></i> Artikel </a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base text-slate-500 py-2 mx-8 flex group-hover:text-teal-500 font-medium dark:text-slate-400"> <i class="fas fa-address-book mr-2 mt-1"></i> Kontak </a>
+                </li>
+                <li class="flex items-center pl-14">
+                  <div class="flex items-center">
+                    <span class="text-slate-500 dark:text-slate-400 mr-2 font-medium text-sm">
+                      <i style="font-size: 20px" id="modeIcon" class="fas fa-sun ml-1"></i>
+                      <!-- Ikon untuk mode terang (light) -->
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header finish -->
+
+    <!-- ganjalan -->
+    <div class="dark:bg-slate-900 bg-slate-100 fixed top-0 left-0 w-full flex h-[90px] items-center z-100"></div>
+    <!-- ganjalan -->
+
+    <!-- hero section start -->
+    <section id="home" class="pt-32 pb-32">
+      <div class="container md:w-[90%]">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 md:w-1/2">
+            <h1 class="text-base font-semibold text-teal-500 md:text-xl">Hello everyone, i'm <span style="font-size: 50px" class="my-5 block font-bold text-slate-500 text-xl md:text-4xl dark:text-slate-400 md:w-full">Nuruzzati</span></h1>
+            <h2 class="font-medium text-slate-500 text-lg mb-3 md:text-lg">Students and Web developers</h2>
+            <p class="font-medium text-slate-500 mb-10 leading-relaxed md:text-lg max-w-xl">live to learn and learn to live</p>
+
+            <a href="#new-bar" class="text-base font-semibold text-white bg-teal-500 py-3 px-6 rounded-full transition duration-300 ease-in-out dark:shadow-xl dark:text-slate-900 dark:font-extrabold">
+              <i class="fab fa-github mr-2"></i> My Github
+            </a>
+          </div>
+
+          <div class="w-full self-end px-4 lg:w-1/2 md:w-1/2 md:block">
+            <div class="mt-10 md:mt-9 md:right-0">
+              <img src="img/nuza.png" style="box-shadow: 2px 2px 2px rgba(210, 206, 206, 0.697)" alt="gue" width="350" class="max-w-full mx-auto rounded-full mt-16" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <section id="about" class="pt-32 pb-32">
+      <div class="container md:w-[90%]">
+        <div class="w-full px-4">
+          <h4 class="text-teal-500 font-bold uppercase text-lg mb-3 w-full px-4">Tentang Saya</h4>
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-10 md:w-1/2">
+              <h2 class="text-3xl font-bold text-slate-500 mb-5 dark:text-slate-400">Menapaki Dunia Kode di SMK Negeri 4 Padalarang</h2>
+              <p class="font-medium text-base text-slate-500 dark:text-slate-500">
+                Saya adalah seorang yang bersemangat dalam belajar pemrograman di SMK Negeri 4 Padalarang. Saya percaya bahwa melalui ilmu dan dedikasi, saya dapat mengubah dunia melalui teknologi. Saya memiliki minat yang besar dalam
+                memecahkan masalah dan menciptakan solusi yang inovatif menggunakan kode. Bersama, mari kita jelajahi dunia yang luas dari pengembangan perangkat lunak!
+              </p>
+            </div>
+            <div class="w-full px-4 md:w-1/2">
+              <h3 class="text-3xl font-bold text-slate-500 mb-5 dark:text-slate-400">Temukan Mitra Baru, Temukan Saya!</h3>
+              <p class="text-slate-500 font-medium text-base dark:text-slate-500">
+                Saya adalah seseorang yang ramah dan mudah bergaul. Saya percaya bahwa kolaborasi adalah kunci kesuksesan, dan saya selalu bersemangat untuk berbagi pengetahuan dan pengalaman dengan orang lain. Mari jalin hubungan yang kuat
+                dan berarti, karena bersama, kita dapat mencapai lebih banyak hal!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section finish -->
+
+    <!-- section portfolio start -->
+    <section id="portfolio" class="pt-32 pb-36">
+      <div class="container text-center text-slate-300">
+        <div class="w-full px-4">
+          <h3 class="text-teal-500 font-bold text-lg mb-2">PORTFOLIO</h3>
+          <h2 class="font-bold text-3xl mb-5 dark:text-slate-400 text-slate-500">Projek Terbaru</h2>
+          <p class="text-slate-600 dark:text-slate-500 mb-16">Proyek-proyek terbaru yang telah saya kerjakan</p>
+        </div>
+
+        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 mx-auto">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md overflow-hidden" style="border: 6px double rgb(176, 176, 176)">
+              <img src="img/nuzashop-php-2.png" alt="" width="full" />
+            </div>
+            <h3 class="font-semibold text-teal-500 mt-5 text-lg">Landing Page</h3>
+            <p class="text-xs mt-1 dark:text-slate-400 text-slate-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, aliquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md overflow-hidden" style="border: 6px double rgb(176, 176, 176)">
+              <img src="img/blog-nuzablog.png" alt="" width="full" />
+            </div>
+            <h3 class="font-semibold text-teal-500 mt-5 text-lg">Landing Page</h3>
+            <p class="text-xs mt-1 dark:text-slate-400 text-slate-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, aliquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md overflow-hidden" style="border: 6px double rgb(176, 176, 176)">
+              <img src="Screenshot 2023-09-07 193717.png" alt="" width="full" />
+            </div>
+            <h3 class="font-semibold text-teal-500 mt-5 text-lg">Landing Page</h3>
+            <p class="text-xs mt-1 dark:text-slate-400 text-slate-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, aliquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md overflow-hidden" style="border: 6px double rgb(176, 176, 176)">
+              <img src="Screenshot 2023-09-07 193717.png" alt="" width="full" />
+            </div>
+            <h3 class="font-semibold text-teal-500 mt-5 text-lg">Landing Page</h3>
+            <p class="text-xs mt-1 dark:text-slate-400 text-slate-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, aliquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section portfolio finish -->
+
+    <!-- section clients start -->
+    <!-- <section id="clients">
+      <div class="container pb-32 pt-36">
+        <div class="w-full px-4 text-center">
+          <h3 class="text-teal-500 font-bold text-lg mb-2 uppercase">clients</h3>
+          <h2 class="font-bold text-3xl mb-5 dark:text-slate-400 text-slate-500">Yang Pernah Bekerja Sama</h2>
+          <p class="text-slate-600 dark:text-slate-500 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero sequi voluptatem Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="https:/google.com" class="w-[120px] md:w-[130px] lg:w-[140px] dark:grayscale drop-shadow grayscale-[90%] hover:grayscale-0 dark:hover:grayscale-0 transition duration-300 mx-4 py-4 lg:mx-6 lg:py-6 xl:py-8 xl:mx-8">
+              <img src="img/google.png" alt="Google" />
+            </a>
+            <a
+              href="https://www.bankbjb.co.id/"
+              class="w-[120px] md:w-[130px] lg:w-[140px] dark:grayscale drop-shadow grayscale-[90%] hover:grayscale-0 dark:hover:grayscale-0 transition duration-300 mx-4 py-4 lg:mx-6 lg:py-6 xl:py-8 xl:mx-8"
+            >
+              <img src="img/bjb.png" alt="bjb" />
+            </a>
+            <a href="https://www.bni.co.id/" class="w-[120px] md:w-[130px] lg:w-[140px] dark:grayscale drop-shadow grayscale-[90%] hover:grayscale-0 dark:hover:grayscale-0 transition duration-300 mx-4 py-4 lg:mx-6 lg:py-6 xl:py-8 xl:mx-8">
+              <img src="img/bni.png" alt="bni" />
+            </a>
+            <a href="https://www.kai.id/" class="w-[120px] md:w-[130px] lg:w-[140px] dark:grayscale drop-shadow grayscale-[90%] hover:grayscale-0 dark:hover:grayscale-0 transition duration-300 mx-4 py-4 lg:mx-6 lg:py-6 xl:py-8 xl:mx-8">
+              <img src="img/kai.png" alt="kereta api" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- section clients finish -->
+
+    <!-- section blog start -->
+    <section id="blog">
+      <div class="container pb-32 pt-36">
+        <div class="w-full px-4 text-center">
+          <h3 class="text-teal-500 font-bold text-lg mb-2">BLOG</h3>
+          <h2 class="font-bold text-3xl mb-5 dark:text-slate-400 text-slate-500">Tulisan Terkini</h2>
+          <p class="dark:text-slate-500 text-slate-600 mb-16">Beberapa artikel terbaru yang saya tulis di blog saya</p>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="dark:bg-slate-800 rounded-xl shadow-xl overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/320x200?programming" alt="" class="w-full" />
+              <div class="py-8 px-6 bg-slate-100 dark:bg-slate-800">
+                <a href="">
+                  <h3 class="font-bold text-xl mb-2 dark:text-slate-400 dark:hover:text-slate-300 hover:text-slate-500 duration-100 hover:text-[20.5px] block truncate text-slate-600">Tips Belajar Programming</h3>
+                </a>
+                <p class="text-sm dark:text-slate-400 text-slate-500 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                <a href="#" class="text-xs bg-teal-500 px-5 py-2 rounded-xl dark:text-slate-800 font-bold hover:text-[12.5px] duration-100 sm:px-10 md:px-16 lg:px-4 text-slate-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="dark:bg-slate-800 bg-slate-400 rounded-xl shadow-xl overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/320x200?programming" alt="" class="w-full" />
+              <div class="py-8 px-6 bg-slate-100 dark:bg-slate-800">
+                <a href="">
+                  <h3 class="font-bold text-xl hover:text-slate-500 mb-2 dark:text-slate-400 dark:hover:text-slate-300 duration-100 hover:text-[20.5px] block truncate text-slate-600">Tips Belajar Programming</h3>
+                </a>
+                <p class="text-sm dark:text-slate-400 mb-4 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                <a href="#" class="text-xs bg-teal-500 px-5 py-2 rounded-xl dark:text-slate-800 font-bold hover:text-[12.5px] duration-100 sm:px-10 md:px-16 lg:px-4 text-slate-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="dark:bg-slate-800 bg-slate-400 rounded-xl shadow-xl overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/320x200?programming" alt="" class="w-full" />
+              <div class="py-8 px-6 bg-slate-100 dark:bg-slate-800">
+                <a href="">
+                  <h3 class="font-bold text-xl hover:text-slate-500 mb-2 dark:text-slate-400 dark:hover:text-slate-300 duration-100 hover:text-[20.5px] block truncate text-slate-600">Tips Belajar Programming</h3>
+                </a>
+                <p class="text-sm dark:text-slate-400 mb-4 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                <a href="#" class="text-xs bg-teal-500 px-5 py-2 rounded-xl dark:text-slate-800 font-bold hover:text-[12.5px] duration-100 sm:px-10 md:px-16 lg:px-4 text-slate-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="dark:bg-slate-800 bg-slate-400 rounded-xl shadow-xl overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/320x200?programming" alt="" class="w-full" />
+              <div class="py-8 px-6 bg-slate-100 dark:bg-slate-800">
+                <a href="">
+                  <h3 class="font-bold text-xl mb-2 hover:text-slate-500 dark:text-slate-400 text-slate-600 dark:hover:text-slate-300 duration-100 hover:text-[20.5px] block truncate">Tips Belajar Programming</h3>
+                </a>
+                <p class="text-sm dark:text-slate-400 mb-4 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                <a href="#" class="text-xs bg-teal-500 px-5 py-2 rounded-xl dark:text-slate-800 font-bold hover:text-[12.5px] duration-100 sm:px-10 md:px-16 lg:px-4 text-slate-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section blog finish -->
+
+    <!-- contact start -->
+    <section id="contact" class="pb-32 pt-32">
+      <div class="container">
+        <div class="w-full px-4 text-center">
+          <h3 class="text-teal-500 font-bold text-lg mb-2">CONTACT</h3>
+          <h2 class="font-bold text-3xl mb-5 dark:text-slate-400 text-slate-500">Hubungi Kami</h2>
+          <p class="dark:text-slate-500 mb-16 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, minima.</p>
+        </div>
+
+        <form action="">
+          <div class="w-full lg:w-2/3 mx-auto">
+            <div class="w-full px-4 mb-6">
+              <label for="name" class="font-bold dark:text-teal-500 text-sm text-slate-500">Nama</label>
+              <input type="text" id="name" class="w-full rounded-s-md dark:bg-slate-400 bg-slate-200 focus:ring-teal-500 focus:border-teal-500 focus:ring-1 placeholder:italic placeholder:text-slate-400" />
+            </div>
+            <div class="w-full px-4 mb-6">
+              <label for="email" class="font-bold dark:text-teal-500 text-sm text-slate-500">Email</label>
+              <input type="text" id="email" class="w-full rounded-s-md dark:bg-slate-400 focus:ring-teal-500 bg-slate-200 focus:border-teal-500 focus:ring-1" />
+            </div>
+            <div class="w-full px-4 mb-6">
+              <label for="pesan" class="font-bold dark:text-teal-500 text-sm text-slate-500">Pesan</label>
+              <textarea type="text" id="pesan" class="w-full rounded-s-md dark:bg-slate-400 focus:ring-teal-500 focus:border-teal-500 focus:ring-1 h-32 bg-slate-200"></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button class="bg-teal-500 py-2 px-3 w-full rounded-full dark:text-slate-900 font-semibold text-sm text-slate-100">Kirim Pesan</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact start -->
+
+    <!-- footer start -->
+    <footer class="pt-12 pb-8 dark:border-t-[1px] dark:rounded-t-[1%] rounded-[10rem] border-t-[3px] border-slate-300 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap mx-auto justify-center">
+          <div class="lg:w-1/4 w-full px-4 mb-12 text-slate-400 font-semibold md:w-1/2">
+            <h3 class="text-xl mt-2 mb-2">Hubungi Kami</h3>
+            <p class="mb-2 font-medium text-slate-500"><i class="mr-1 fas fa-envelope"></i> nuzatampan@gmail.com</p>
+            <p class="mb-2 font-medium text-slate-500"><i class="mr-1 fas fa-map-marker-alt"></i> Jl.Hj.Dasuki No 33</p>
+            <p class="mb-2 font-medium text-slate-500"><i class="mr-1 fas fa-city"></i> Padalarang, Bandung</p>
+          </div>
+
+          <div class="lg:w-1/4 w-full px-4 mb-12 text-slate-400 font-semibold md:w-1/2">
+            <h3 class="text-xl mt-2 mb-2">Sosial Media</h3>
+            <p class="mb-2 font-medium text-slate-500">
+              <a class="hover:text-teal-500" href=""><i class="mr-1 fab fa-instagram"></i> Instagram</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a class="hover:text-teal-500" href=""><i class="mr-1 fab fa-facebook"></i> Facebook</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a class="hover:text-teal-500" href=""><i class="mr-1 fab fa-tiktok"></i> Tiktok</a>
+            </p>
+          </div>
+
+          <div class="lg:w-1/4 w-full px-4 mb-12 text-slate-400 font-semibold md:w-1/2">
+            <h3 class="text-xl mt-2 mb-2">Tautan Portfolio</h3>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-home"></i> Beranda</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-user"></i> Tentang Saya</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-folder"></i> Portfolio</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-users"></i> Client</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-blog"></i> Blog</a>
+            </p>
+            <p class="mb-2 font-medium text-slate-500">
+              <a href="" class="hover:text-teal-500"><i class="mr-1 fas fa-envelope"></i> Contact</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+          <p class="text-xs text-center text-slate-500 justify-center items-center">
+            Situs ini telah dikembangkan dengan penuh dedikasi oleh <span class="text-slate-400 hover:text-teal-500"><a href="" class="font-bold"> Nuza Nadenta </a></span> dengan menggunakan
+            <span class="text-slate-400"><a href="" class="font-bold hover:text-sky-500">framework Tailwind CSS</a></span
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- back to top start -->
+    <div class="group fixed justify-center items-center shadow-xl bottom-4 right-4 z-[9999] h-10 w-10 rounded-full bg-transparent p-4">
+      <a
+        href="#home"
+        class="fixed hidden justify-center items-center shadow-xl bottom-4 right-4 z-[9999] h-10 w-10 rounded-full bg-teal-500 p-4 group-hover:animate-bounce group-hover:h-[43px] group-hover:w-[43px] transition-transform duration-500"
+        id="to-top"
+      >
+        <span class="block">
+          <i class="fas fa-arrow-up text-slate-700"></i>
+          <!-- Ikon "arrow-up" dari Font Awesome -->
+        </span>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

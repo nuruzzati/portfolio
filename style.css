@@ -1,0 +1,176 @@
+/* custom.css */
+/* custom.css */
+.container {
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1320px; /* Untuk menggantikan layar 2xl */
+}
+
+body {
+  font-family: 'Poppins', Sans-serif;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 2px;
+  margin-top: 0.5rem /* 8px */;
+  margin-bottom: 0.5rem /* 8px */;
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.hamburger-active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger-active .hamburger-line:nth-child(2) {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hamburger-active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.transisi {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.origin-1 {
+  transform-origin: top left;
+}
+
+.origin-2 {
+  transform-origin: bottom left;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  --tw-translate-x: 0.95rem /* 12px */;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+li {
+  list-style-type: none;
+}
+
+* {
+  text-decoration: none;
+}
+
+.bar-top {
+  width: 100%;
+  height: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progres, progres-color;
+  animation-timeline: scroll();
+  transform-origin: 0%;
+  z-index: 909090900;
+  border-radius: 10px;
+}
+.bar-bottom {
+  width: 100%;
+  height: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  animation: progres, progres-color;
+  animation-timeline: scroll();
+  transform-origin: 100%;
+  z-index: 10000000;
+  border-radius: 10px;
+}
+.bar-left {
+  height: 100%;
+  width: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  animation: progresz, progres-color;
+  animation-timeline: scroll();
+  transform-origin: 0 100%;
+  z-index: 10000000;
+  border-radius: 10px;
+}
+.bar-right {
+  height: 100%;
+  width: 2px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: progresz, progres-color;
+  animation-timeline: scroll();
+  transform-origin: 100% 0;
+  z-index: 10000000;
+  border-radius: 10px;
+}
+
+@keyframes progres {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes progresz {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes progres-color {
+  0% {
+    background: linear-gradient(#642bff, #ff22e6);
+  }
+  100% {
+    background: linear-gradient(#642bff, #ff22e6);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+
+  /* background: #d1e5ff; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+  transition: 5s;
+  @apply animate-ping;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ff22e6, #642bff);
+}
